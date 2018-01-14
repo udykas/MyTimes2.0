@@ -45,47 +45,99 @@ header{
 .main-container{
   display: flex;
   position: relative;
+  justify-content: space-around;
   top: 80px;
 }
 
 .column{
-  border: 1px solid black;
   height: 200px;
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
 }
 
 /* Large Column Begins */
 
+.main-story{
+  width: 600px;
+  margin: 1em;
+}
+
 .column.large{
-  border: 1px solid black;
-  height: 800px;
+  height: auto;
   width: 630px;
+  margin-left: 20px;
+}
+
+.story-image-headline.Phish{
+  display: flex;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  height: 300px;
+  align-items: center;
+  width: 630px;
+}
+
+.story-image-headline.Phish h2{
+  display: inline-block;
+  font-size: 40px;
+  padding-left: 20px;
 }
 
 h2{
   color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-.main-story{
-  width: 600px;
-  margin: 1em;
-  background-color: #3498db;
-  border: 1px solid black;
+h3{
+  font-family: Georgia
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.story-text{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  font-weight: lighter;
 }
 
 .sub-story-container{
-  width: 600px;
-  margin: 1em;
-  background-color: #2eec71;
-  border: 2px dashed grey;
+  width: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
 }
 
 .sub-story-column{
   width: 300px;
   margin: 1em;
-  background-color: #95a5a6;
-  border: 2px dashed orange;
+  display: inline-block;
+}
+
+.story-no-image h2{
+  color: black;
+}
+
+.story-image.Earth{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  height: 300px;
+  width: 300px;
+}
+
+.story-image-headline.Earth{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.story-image-headline.Camera{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  height: 300px;
+  width: 300px;
+  text-align: center;
 }
 
 /* Large Column ends */
@@ -111,9 +163,13 @@ h2{
   border: 1px solid black;
 }
 
+
+/*
 .column:nth-child(1){
   background-color: blue;
 }
+*/
+
 
 .column:nth-child(2){
   background-color: green;
